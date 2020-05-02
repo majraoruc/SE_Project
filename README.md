@@ -2,4 +2,4 @@
 
 Students: 
 - Majra Oruč
-- Emerald Podbićanin (emeban44)
+- Emerald Podbićanin
