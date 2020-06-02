@@ -13,7 +13,7 @@
 
         <div class="container">
             <div class="z-depth-1 lighten-4 row">
-                <form class="col s12" method="post">
+                <form id="loginForm" class="col s12" method="post">
                     <div id="login-form-content">
                         <div class="row">
                             <div class="col s12">
@@ -25,6 +25,7 @@
                                 <input class="validate" type="email" name="email" id="email" />
                                 <label for="email">Enter your email</label>
                             </div>
+                            <p id="error"  style="color:red;">  </p> 
                         </div>
 
                         <div class="row">
@@ -35,8 +36,7 @@
                         </div>
 
                         <div class="row">
-                            <a href="index.php" name="btn-login"
-                                class="col s12 btn btn-large waves-effect green-btn">Login</a>
+                        <button type="submit" name="btn-login" class="col s12 btn btn-large waves-effect green-btn"> Login </button>
                         </div>
                     </div>
                 </form>
@@ -46,9 +46,44 @@
     </div>
 
     <?php include_once("template/includes/js.php"); 
+       
+       $link = mysqli_connect("shareddb-w.hosting.stackcp.net", "usersDB-313439961b", "sarajevo84", "usersDB-313439961b");
     
+        if (mysqli_connect_error()) {
+             die ("There was an error connecting to the database!");
+        }
+
+        $email = $_POST['email'];
+        $password = $_POST['password'];
         
+        $query = "SELECT id FROM users WHERE email = '$email' AND password = '$password'";
+        $result =  mysqli_query($link, $query);
+       
+        if (mysqli_num_rows($result)){
+            echo '<script type="text/javascript">
+            window.location = "index.php"
+            </script>';
+        } else if (!empty($email) && !empty($password)){
+            echo '<script type="text/javascript">
+                $("#error").html("Email or Password is incorrect!");
+                </script>';
+        }
+
+
+
     ?>
 </body>
 
 </html>
+
+<script type="text/javascript">
+
+$("#loginForm").on('submit', function(event) {
+    event.preventDefault();
+
+    if ($("#email").val() == "" || $("#password").val() == "" )    {
+        $("#error").html("Enter both your Email and Password!");
+    } else this.submit(); //now submit the form
+});
+
+</script>
