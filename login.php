@@ -42,10 +42,13 @@
                 </form>
             </div>
         </div>
-        <a href="#">Create account</a>
+        <a href="create_account.php">Create account</a>
     </div>
 
-    <?php include_once("template/includes/js.php"); ?>
+    <?php include_once("template/includes/js.php"); 
+    
+        
+    ?>
 </body>
 
 </html>

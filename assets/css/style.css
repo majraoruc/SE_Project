@@ -194,6 +194,12 @@ h1.logo-wrapper {
     font-weight: 400;
 }
 
+.errors{
+    color: red;
+    width:10px;
+    height: 5px;
+}
+
 #header .header-search-input::placeholder {
     color: #fff;
     font-size: 16px;
@@ -257,6 +263,7 @@ h1.logo-wrapper {
 
 .green-btn {
     background: #009600;
+    
 }
 
 .no-bottom-margin {
