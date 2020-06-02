@@ -1,3 +1,6 @@
+
+
+
 <header id="header" class="page-topbar">
     <div class="navbar-fixed">
         <nav class="navbar-color gradient-45deg-light-blue-cyan">
@@ -21,12 +24,12 @@
                 </div>
                 <ul class="right hide-on-med-and-down">
                     <li>
-                        <a href="#" class="waves-effect waves-block waves-light profile-button"
+                        <a id="userTopRight" href="#" class="waves-effect waves-block waves-light profile-button"
                             data-target="profile-dropdown">
-                            Meho Adislić
+                            Meho Podbicanin
                         </a>
                         <ul id="profile-dropdown" class="dropdown-content">
-                            <li>
+            <!--                <li>
                                 <a href="#" class="grey-text text-darken-1">
                                     <i class="material-icons">face</i> Profile</a>
                             </li>
@@ -42,7 +45,7 @@
                             <li>
                                 <a href="#" class="grey-text text-darken-1">
                                     <i class="material-icons">lock_outline</i> Lock</a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="login.php" class="grey-text text-darken-1">
                                     <i class="material-icons">keyboard_tab</i> Logout</a>
@@ -54,3 +57,7 @@
         </nav>
     </div>
 </header>
+
+
+
+

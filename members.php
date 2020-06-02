@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 
 <head>
     <title>Finance Application - Home</title>
@@ -69,7 +69,7 @@
         <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Save</a>
         </div>
-    </div>
+      </div>
     </div>
 
 
@@ -83,3 +83,5 @@
 </body>
 
 </html>
+
+

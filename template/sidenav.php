@@ -1,4 +1,7 @@
+
+
 <?php 
+
   $directoryURI = $_SERVER['REQUEST_URI'];
   $path = parse_url($directoryURI, PHP_URL_PATH);
   $components = explode('/', $path);
@@ -23,3 +26,4 @@
     <li class="<?php (strtolower($last_part) == "members.php" ? "active" : "") ?>"><a href="members.php"><i class="material-icons">account_circle</i>Members</a></li>
     <li class="<?php (strtolower($last_part) == "budget.php" ? "active" : "") ?>"><a href="budget.php"><i class="material-icons">monetization_on</i>Budgets</a></li>
 </ul>
+

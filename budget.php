@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+
 
 <head>
     <title>Finance Application - Home</title>
@@ -78,7 +79,11 @@
         </a>
     </div>
 
-    <?php include_once("template/includes/js.php"); ?>
+    <?php include_once("template/includes/js.php"); 
+    ?>
 </body>
 
 </html>
+
+
+
